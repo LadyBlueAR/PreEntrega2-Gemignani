@@ -19,11 +19,16 @@ const Checkout = () => {
           </div>
         ))}
         <h4 className="text-end mt-5">Total: ${total}</h4>
-        <Link to={{ pathname: '/orderConfirmation', state: { total: total } }} className='text-decoration-none'>
+        <Link to='/' className='text-decoration-none'>
           <button className="btn btn-dark d-block mx-auto mt-4 w-100">
+            Seguir Comprando
+          </button>
+        </Link>    
+        <Link to={{ pathname: '/orderConfirmation', state: { total: total } }} className='text-decoration-none'>
+          <button className="btn btn-dark d-block mx-auto mt-1 w-100">
             Finalizar Compra
           </button>
-        </Link>
+        </Link>            
       </div>
     </div>
   );

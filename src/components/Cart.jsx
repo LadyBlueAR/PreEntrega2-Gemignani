@@ -44,6 +44,7 @@ const Cart = () => {
           </tr>
           <tr>
             <td colSpan="5" className="text-end">
+              <Link to="/" className="btn btn-outline-primary me-2">Seguir Comprando</Link>
               <button onClick={() => clearCart()} className="btn btn-outline-danger me-2">
                 Limpiar Carrito
               </button>
