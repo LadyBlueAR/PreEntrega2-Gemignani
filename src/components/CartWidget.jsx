@@ -1,22 +1,23 @@
-
-import cartImg from './assets/cart.png'
-import { useContext } from 'react'
-import CartContext from '../context/CartContext'
-import { Link } from 'react-router-dom'
+import { useContext } from "react";
+import CartContext from "../context/CartContext";
+import { Link } from "react-router-dom";
+import { BiCart } from "react-icons/bi";
 
 function CartWidget() {
-
-  const { cart, cantidadTotal } = useContext(CartContext)
-  console.log(cantidadTotal)
+  const { cart, cantidadTotal } = useContext(CartContext);
 
   return (
-    <div>
-      <Link to='/cart' className='CartWidget' style={{ display: cantidadTotal > 0 ? 'block' : 'none'}}>
-        <img src={cartImg} alt="cart-img" />
+    <div className="ml-auto">
+      <Link
+        to="/cart"
+        className="btn btn-dark"
+        style={{ display: cantidadTotal > 0 ? "inline-block" : "none" }}
+      >
+        <BiCart className="mr-2" />
         {cantidadTotal}
-      </Link>        
+      </Link>
     </div>
-  )
+  );
 }
 
-export default CartWidget
+export default CartWidget;

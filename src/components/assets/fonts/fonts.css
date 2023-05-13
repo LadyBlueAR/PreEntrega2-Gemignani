@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Play';
+    src: url('./Play-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url('./Play-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to bottom, gray, #ffffff);
+    background-repeat: no-repeat;
+    font-family: 'Play', Arial, Helvetica, sans-serif;
+}
+
+h6, h1 {
+    font-family: 'Play', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}

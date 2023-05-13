@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/assets/fonts/fonts.css'
 import ItemListContainer from './components/ItemListContainer';
 import NavBar from './components/NavBar';
 import ItemDetailContainer from './components/ItemDetailContainer';

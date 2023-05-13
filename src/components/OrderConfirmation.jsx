@@ -9,10 +9,18 @@ const OrderConfirmation = () => {
   
 
   return (
-    <div>
-      <h1>Gracias por tu compra!</h1>
-      <p>Tu número de orden es: {orderNumber}</p>
-      <p>El total de tu compra es: ${total}</p>
+    <div className="container my-5">
+      <div className="row justify-content-center">
+        <div className="col-lg-6 col-md-8">
+          <div className="card shadow-lg">
+            <div className="card-body text-center">
+              <h1 className="card-title">¡Gracias por tu compra!</h1>
+              <p className="card-text">Tu <strong>número de orden</strong> es: <strong>{orderNumber}</strong></p>
+              <p className="card-text">El <strong>total</strong> de tu compra es: <strong>${total}</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

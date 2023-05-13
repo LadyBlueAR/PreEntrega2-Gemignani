@@ -9,16 +9,17 @@ const CartItem = ({ id, name, price, cantidad }) => {
   };
 
   return (
-    <div className="cart-item">
-      <div className="cart-item__details">
-        <h3 className="cart-item__title">{name}</h3>
-        <p className="cart-item__price">${price}</p>
-        <p className="cart-item__quantity">Cantidad: {cantidad}</p>
-      </div>
-      <button onClick={handleRemove} className="cart-item__remove">
-        Eliminar
-      </button>
-    </div>
+    <tr>
+      <td>{name}</td>
+      <td>${price}</td>
+      <td>{cantidad}</td>
+      <td>${price * cantidad}</td>
+      <td>
+        <button onClick={handleRemove} className="btn btn-sm btn-outline-danger">
+          Eliminar
+        </button>
+      </td>
+    </tr>
   );
 };
 

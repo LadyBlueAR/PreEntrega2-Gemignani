@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
-//import { getProductoById } from "../asyncMock";
 
 import { getDoc, doc} from 'firebase/firestore'
 import { db } from '../services/firebase/fireBaseConfig'
