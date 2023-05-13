@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 
 const Cart = () => {
-    const {cart, clearCart, total} = useContext(CartContext)
-
+    const {cart, total, clearCart} = useContext(CartContext)
+   
     if(cart.length === 0 ) {
         return(
             <div>

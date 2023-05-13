@@ -32,7 +32,6 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                 <p>Precio: ${price}</p>
             </section>
             <footer>
-               {/*<ItemCount inicial={1} stock={stock} onAdd={(cantidad) => console.log('cantidad agregada', cantidad)}/>*/}
                {
                 cantidadAgregada > 0 ? (
                     <Link to='/cart' className="Option" >Terminar Compra</Link>

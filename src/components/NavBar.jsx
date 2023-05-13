@@ -1,7 +1,5 @@
 import { NavLink, Link } from "react-router-dom"
 import CartWidget from "./CartWidget"
-import React, {useContext} from "react"
-import { CartContext } from "../context/CartContext"
 
 function NavBar() {
 

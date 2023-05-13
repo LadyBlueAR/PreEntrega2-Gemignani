@@ -16,7 +16,7 @@ const CartItem = ({ id, name, price, cantidad }) => {
         <p className="cart-item__quantity">Cantidad: {cantidad}</p>
       </div>
       <button onClick={handleRemove} className="cart-item__remove">
-        Remove
+        Eliminar
       </button>
     </div>
   );
